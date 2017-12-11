@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ffae6768-b919-4cb4-bd93-f913ae6baa44" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/inbox_dal.js" afterPath="$PROJECT_DIR$/model/inbox_dal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/inbox_routes.js" afterPath="$PROJECT_DIR$/routes/inbox_routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/item_routes.js" afterPath="$PROJECT_DIR$/routes/item_routes.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -63,7 +60,7 @@
       <file leaf-file-name="tags_routes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/tags_routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1159">
+            <state relative-caret-position="1260">
               <caret line="84" column="24" lean-forward="false" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
               <folding />
             </state>
@@ -83,7 +80,7 @@
       <file leaf-file-name="item_dal.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/item_dal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="989">
+            <state relative-caret-position="990">
               <caret line="66" column="23" lean-forward="false" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
               <folding />
             </state>
@@ -93,7 +90,7 @@
       <file leaf-file-name="item_routes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/item_routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1070">
+            <state relative-caret-position="1155">
               <caret line="77" column="42" lean-forward="false" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
               <folding />
             </state>
@@ -103,8 +100,8 @@
       <file leaf-file-name="inbox_dal.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/inbox_dal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+            <state relative-caret-position="735">
+              <caret line="49" column="30" lean-forward="false" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -113,7 +110,7 @@
       <file leaf-file-name="inbox_routes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/inbox_routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
+            <state relative-caret-position="945">
               <caret line="63" column="2" lean-forward="false" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
               <folding />
             </state>
@@ -177,10 +174,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="580" />
-    <option name="y" value="191" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="629" />
+    <option name="y" value="23" />
+    <option name="width" value="1187" />
+    <option name="height" value="1336" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -197,7 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -241,6 +237,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -363,21 +360,21 @@
       <workItem from="1512942066622" duration="1697000" />
       <workItem from="1512962090906" duration="30000" />
       <workItem from="1513018828684" duration="797000" />
+      <workItem from="1513027830209" duration="617000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32798000" />
+    <option name="totallyTimeSpent" value="33415000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="580" y="191" width="1400" height="1000" extended-state="0" />
-    <editor active="true" />
+    <frame x="629" y="23" width="1187" height="1336" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13357143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15754002" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1632653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16258879" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -432,7 +429,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1470">
           <caret line="98" column="24" lean-forward="false" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,7 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1470">
           <caret line="98" column="24" lean-forward="false" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,7 +740,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/tags_routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1159">
+        <state relative-caret-position="1260">
           <caret line="84" column="24" lean-forward="false" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
           <folding />
         </state>
@@ -753,7 +748,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/item_dal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
+        <state relative-caret-position="990">
           <caret line="66" column="23" lean-forward="false" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
           <folding />
         </state>
@@ -761,7 +756,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/item_routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1070">
+        <state relative-caret-position="1155">
           <caret line="77" column="42" lean-forward="false" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
           <folding />
         </state>
@@ -769,7 +764,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/inbox_routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
+        <state relative-caret-position="945">
           <caret line="63" column="2" lean-forward="false" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
           <folding />
         </state>
@@ -777,8 +772,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/inbox_dal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+        <state relative-caret-position="735">
+          <caret line="49" column="30" lean-forward="false" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
           <folding />
         </state>
       </provider>
