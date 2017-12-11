@@ -37,7 +37,7 @@ router.get('/seller', function(req, res) {
     if (req.query.seller_email == null) {
         res.send('email is null')
     }
-    item_dal.getBySeller(function(err, result) {
+    item_dal.getBySeller(req.query.seller_email, function(err, result) {
         if (err) {
             res.send(err);
         }
@@ -51,7 +51,7 @@ router.get('/category', function(req, res) {
     if (req.query.category == null) {
         res.send('category is null')
     }
-    item_dal.getByCategory(function(err, result) {
+    item_dal.getByCategory(req.query.category, function(err, result) {
         if (err) {
             res.send(err);
         }
@@ -65,7 +65,7 @@ router.get('/maxprice', function(req, res) {
     if (req.query.price == null) {
         res.send('price is null')
     }
-    item_dal.getByMaxPrice(function(err, result) {
+    item_dal.getByMaxPrice(req.query.price, function(err, result) {
         if (err) {
             res.send(err);
         }
@@ -79,7 +79,7 @@ router.get('/minage', function(req, res) {
     if (req.query.minage == null) {
         res.send('minage is null')
     }
-    item_dal.getByMinAge(function(err, result) {
+    item_dal.getByMinAge(req.query.minage, function(err, result) {
         if (err) {
             res.send(err);
         }

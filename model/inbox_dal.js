@@ -43,8 +43,8 @@ exports.getById = function(msg_id, callback) {
 };
 
 exports.insert = function(params, callback) {
-    var query = 'insert into inbox(recipient_email, sender_email, message, item_id, subject) values(?, ?, ?, ?, ?);';
-    var queryData = [params.recipient_email, params.sender_email, params.message, params.item_id, params.subject];
+    var query = 'insert into inbox(recipient_email, sender_email, message, subject) values(?, ?, ?, ?);';
+    var queryData = [params.recipient_email, params.sender_email, params.message, params.subject];
 
     connection.query(query, queryData, function(err, result) {
         callback(err, result);

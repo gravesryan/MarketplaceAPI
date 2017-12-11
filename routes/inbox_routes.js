@@ -66,9 +66,6 @@ router.get('/insert', function(req, res) {
     if (req.query.message == null) {
         res.send('missing message');
     }
-    if (req.query.item_id == null) {
-        res.send('missing item_id');
-    }
     if (req.query.subject == null) {
         res.send('missing subject');
     }
