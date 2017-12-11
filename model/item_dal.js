@@ -64,7 +64,7 @@ exports.insert = function(params, callback) {
     var query = 'call new_item(?, ?, ?, ?, ?, ?, ?)';
     var queryData = [params.email, params.name, params.description,
         params.category, params.quantity, params.price,
-        params.minAge];
+        params.minage];
 
     connection.query(query, queryData, function(err, result) {
         callback(err, result);
