@@ -7,6 +7,8 @@
 var app = require('../app');
 var debug = require('debug')('marketapi:server');
 var http = require('http');
+var fs = require('fs');
+var url = require('url');
 
 /**
  * Get port from environment and store in Express.

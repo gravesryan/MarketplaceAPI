@@ -6,6 +6,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var multer = require('multer');
 
+var http = require('http');
+var fs = require('fs');
+var url = require('url');
+
 var index = require('./routes/index');
 var users = require('./routes/user_routes');
 var items = require('./routes/item_routes');
@@ -37,13 +41,15 @@ app.use('/pictures', pictures);
 app.use('/sales', sales);
 app.use('/tags', tags);
 
+var dir = path.join(__dirname, 'public/images');
+
 
 var Storage = multer.diskStorage({
     destination: function(req, file, callback) {
         callback(null, './public/images');
     },
     filename: function(req, file, callback) {
-        callback(null, file.fieldname + '-' + Date.now() + '.png');
+        callback(null, req.query.item_id + '-' + req.query.img_num + '.png');
     }
 });
 
@@ -52,11 +58,21 @@ var upload = multer({
 }).single('picture');
 
 app.get("/pics/download", function (req, res) {
-    var requestSettings = { }
+
 })
 
 app.get("/", function(req, res) {
     res.sendFile(__dirname + "/index.html");
+});
+
+app.get("/pics", function(req, res) {
+    var file = path.join(dir, req.query.item_id + '-' + req.query.img_num + '.png');
+    console.log(file);
+    var s = fs.createReadStream(file);
+    s.on('open', function() {
+        res.set('Content-Type', 'image/png');
+        s.pipe(res);
+    });
 });
 
 app.post("/pics/upload", function(req, res) {
