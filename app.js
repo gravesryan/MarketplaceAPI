@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var multer = require('multer');
 
 var index = require('./routes/index');
 var users = require('./routes/user_routes');
@@ -14,6 +15,7 @@ var sales = require('./routes/sale_routes');
 var tags = require('./routes/tags_routes');
 
 var app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -27,7 +29,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
+//app.use('/', index);
 app.use('/users', users);
 app.use('/items', items);
 app.use('/inbox', inbox);
@@ -35,6 +37,37 @@ app.use('/pictures', pictures);
 app.use('/sales', sales);
 app.use('/tags', tags);
 
+
+var Storage = multer.diskStorage({
+    destination: function(req, file, callback) {
+        callback(null, './public/images');
+    },
+    filename: function(req, file, callback) {
+        callback(null, file.fieldname + '-' + Date.now() + '.png');
+    }
+});
+
+var upload = multer({
+    storage: Storage
+}).single('picture');
+
+app.get("/pics/download", function (req, res) {
+    var requestSettings = { }
+})
+
+app.get("/", function(req, res) {
+    res.sendFile(__dirname + "/index.html");
+});
+
+app.post("/pics/upload", function(req, res) {
+  console.log("tried");
+    upload(req, res, function(err) {
+        if (err) {
+            return res.end("Something went wrong!");
+        }
+        return res.end("File uploaded successfully!");
+    });
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

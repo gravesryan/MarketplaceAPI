@@ -1,7 +1,21 @@
 var mysql = require('mysql');
 var db = require('./db_connection');
+var multer = require('multer');
 
 var connection = mysql.createConnection(db.config);
+
+var Storage = multer.diskStorage({
+    destination: function(req, file, callback) {
+        callback(null, "./public/images");
+    },
+    filename: function(req, file, callback) {
+        callback(null, file.fieldname + "_" + Date.now() + "_" + file.originalname);
+    }
+});
+
+var upload = multer({
+    storage: Storage
+}).array("imgUploader", 3);
 
 exports.getAll = function(callback) {
     var query = 'select * from pictures';
@@ -10,6 +24,15 @@ exports.getAll = function(callback) {
         callback(err, result);
     });
 };
+
+exports.upload = function(req, res) {
+    upload(req, res, function(err) {
+        if (err) {
+            return res.end("Something went wrong!");
+        }
+        return res.end("File uploaded successfully!");
+    });
+}
 
 exports.getByItemId = function(item_id, callback) {
     var query = 'select * from pictures where item_id = ?';

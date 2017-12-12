@@ -28,6 +28,16 @@ router.get('/all', function(req, res) {
         });
 });
 
+router.get("/upload", function(req, res) {
+    console.log("tried");
+    pictures_dal.upload(req, res, function(err) {
+        if (err) {
+            return res.end("Something went wrong!");
+        }
+        return res.end("File uploaded successfully!");
+    });
+});
+
 router.get('/item_id', function(req, res) {
     if (req.query.item_id == null) {
         return ('item_id is null');
